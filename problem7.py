@@ -14,5 +14,8 @@ def sieve(n):
     return primes
 
 
-PRIMES = sieve(11*10000)
-print(PRIMES[10000])
+
+def main():
+    PRIMES = sieve(11 * 10000)
+    print(PRIMES[10000])
+
