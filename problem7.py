@@ -18,4 +18,8 @@ def sieve(n):
 def main():
     PRIMES = sieve(11 * 10000)
     print(PRIMES[10000])
+    print(sieve(100))
+
+if __name__ == '__main__':
+    main()
 
