@@ -18,11 +18,11 @@ def main():
     place2 = []
     place3 = []
     for p in PRIMES:
-        if p**2 + 2**3 + 2**4 <= X:
+        if p**2 + 2**3 + 2**4 < X:
             place1.append(p)
-        if 2**2 + p**3 + 2**4 <= X:
+        if 2**2 + p**3 + 2**4 < X:
             place2.append(p)
-        if 2**2 + 2**3 + p**4 <= X:
+        if 2**2 + 2**3 + p**4 < X:
             place3.append(p)
 
     c = set()
@@ -30,7 +30,7 @@ def main():
         for p2 in place2:
             for p1 in place1:
                 n = p1 ** 2 + p2 ** 3 + p3 ** 4
-                if n <= X:
+                if n < X:
                     c.add(n)
 
     print(len(c))
