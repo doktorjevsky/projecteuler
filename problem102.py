@@ -1,5 +1,5 @@
 """
-Given a set of triangles, determine how many of them contains the origin
+Given a set of triangles, determine how many of them contain the origin
 """
 
 
